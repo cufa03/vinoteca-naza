@@ -1,18 +1,18 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
+import { Link } from 'react-router-dom';
 import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
+    <div className='app__wrapper'>
       <div>
-        <h1>SITIO EN CONSTRUCCION</h1>
-        <button>B O T O N</button>
+        <h1> NIZA Bemos de Alcohol</h1>
       </div>
-    </>
+      <div>
+        <Link to={'/vinos'}>
+          <h3>Ver mas vinos</h3>
+        </Link>
+      </div>
+    </div>
   );
 }
 
